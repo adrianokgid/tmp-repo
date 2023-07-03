@@ -10,14 +10,14 @@ locals {
   arr3 = ["host1", "host2", "host3"]
 }
 
-Output "Test" {
+output "Test" {
   value = local.arr
 }
 
-Output "Test2" {
+output "Test2" {
   value = local.arr2
 }
 
-Output "Test3" {
+output "Test3" {
   value = local.arr3
 }
