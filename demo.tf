@@ -1,10 +1,23 @@
-provider "aws" {
-  region     = "us-east-1"
-  access_key = "AKIARYP22ZPP7AFJ3EDO"
-  secret_key = "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"
+locals {
+  arr = ["host1", "host2", "host3"]
 }
 
-resource "aws_instance" "myEc2" {
-  ami = "ami-022e1a32d3f742bd8"
-  instance_type = "t2.micro"
+locals {
+  arr2 = ["host1", "host2", "host3"]
+}
+
+locals {
+  arr3 = ["host1", "host2", "host3"]
+}
+
+Output "Test" {
+  value = local.arr
+}
+
+Output "Test2" {
+  value = local.arr2
+}
+
+Output "Test3" {
+  value = local.arr3
 }
